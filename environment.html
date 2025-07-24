@@ -1,147 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environmental Awareness</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e6f7ec;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #2e8b57;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        nav {
-            background-color: #3cb371;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-        }
-        table, th, td {
-            border: 1px solid green;
-            border-collapse: collapse;
-            padding: 8px;
-        }
-        ul, ol {
-            padding-left: 20px;
-        }
-        .highlight {
-            color: green;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Environmental Awareness</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0fdf4;
+      color: #2f4f4f;
+    }
+
+    header {
+      background: url('https://cdn.pixabay.com/photo/2019/09/05/08/48/nature-4452920_1280.jpg') no-repeat center center/cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    nav {
+      background-color: #2e8b57;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #006400;
+    }
+
+    .highlight {
+      background-color: #d0f0c0;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+    }
+
+    ul, ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    th, td {
+      border: 1px solid #4caf50;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .image-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .image-grid img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #b2fab4;
+    }
+
+    @media (max-width: 600px) {
+      .image-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>🌍 Save Earth, Go Green!</h1>
-        <p class="highlight">Raise your voice for nature</p>
-    </header>
+  <!-- Header with background image -->
+  <header>
+    <h1>🌍 Environmental Awareness</h1>
+  </header>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#tips">Tips</a>
-        <a href="#table">Stats</a>
-        <a href="#image">Image</a>
-        <a href="#footer">Contact</a>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#tips">Tips</a>
+    <a href="#table">Stats</a>
+    <a href="#images">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <!-- Main Content Section -->
-    <section id="about">
-        <h2>About Environmental Awareness</h2>
-        <p>
-            Environmental awareness means understanding the fragility of our environment and the importance of its protection.
-            <span class="highlight">It is the first step towards protecting nature.</span> We must all contribute to a cleaner and greener planet.
-        </p>
-        <p>
-            We use HTML entities to display reserved characters like &lt;, &gt;, &amp;, &quot;, and &apos;.
-        </p>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About the Environment</h2>
+    <p>
+      Environmental awareness means understanding how our actions impact the planet.
+      It involves <span class="highlight">sustainable living</span>, reducing waste,
+      conserving energy, and protecting biodiversity.
+    </p>
+    <p>
+      Some reserved HTML characters include: &lt;, &gt;, &amp;, &quot;, &copy; which are used via HTML entities.
+    </p>
+  </section>
 
-    <!-- Tips as Lists -->
-    <section id="tips">
-        <h2>How to Help the Environment</h2>
-        <h3>Unordered List</h3>
-        <ul>
-            <li>Reduce plastic usage</li>
-            <li>Recycle waste</li>
-            <li>Plant more trees</li>
-            <li>Save water &amp; electricity</li>
-        </ul>
+  <!-- List Section -->
+  <section id="tips">
+    <h2 class="section-title">Eco-Friendly Tips</h2>
 
-        <h3>Ordered List</h3>
-        <ol>
-            <li>Start composting</li>
-            <li>Use public transport</li>
-            <li>Say no to single-use plastic</li>
-        </ol>
-    </section>
+    <h3>Unordered List</h3>
+    <ul>
+      <li>Use reusable shopping bags</li>
+      <li>Turn off lights when not needed</li>
+      <li>Opt for bicycles or public transport</li>
+      <li>Compost kitchen waste</li>
+    </ul>
 
-    <!-- Table Section -->
-    <section id="table">
-        <h2>Pollution Statistics</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Country</th>
-                    <th>CO₂ Emissions (2024)</th>
-                    <th>Ranking</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>China</td>
-                    <td>10,065 Mt</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>USA</td>
-                    <td>5,416 Mt</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>India</td>
-                    <td>2,654 Mt</td>
-                    <td>3</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <h3>Ordered List</h3>
+    <ol>
+      <li>Install solar panels</li>
+      <li>Use water-saving fixtures</li>
+      <li>Support green businesses</li>
+    </ol>
+  </section>
 
-    <!-- Image Section -->
-    <section id="image">
-        <h2>Nature in its Beauty</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Nature_image.jpg" alt="Green Nature" width="500">
-        <p>Let’s preserve this beauty for future generations.</p>
-    </section>
+  <!-- Table Section -->
+  <section id="table">
+    <h2 class="section-title">CO₂ Emissions by Country</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>CO₂ Emissions (Mt)</th>
+          <th>World Rank</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>China</td>
+          <td>10,065</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>USA</td>
+          <td>5,416</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>India</td>
+          <td>2,654</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-    <!-- Bookmark -->
-    <section>
-        <h2>Bookmark Example</h2>
-        <p>Click <a href="#about">here</a> to go back to the About section.</p>
-    </section>
+  <!-- Image Gallery Section -->
+  <section id="images">
+    <h2 class="section-title">Nature Gallery</h2>
+    <div class="image-grid">
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/05/07/earth-1867379_1280.jpg" alt="Earth in Hands">
+      <img src="https://cdn.pixabay.com/photo/2016/09/09/05/23/green-1659054_1280.jpg" alt="Green Nature">
+      <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="Single Tree">
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer id="footer">
-        <p>&copy; 2025 Eco World. All Rights Reserved.</p>
-        <p>Contact: <a href="mailto:info@ecoworld.org" style="color: white;">info@ecoworld.org</a></p>
-    </footer>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>Have suggestions or want to volunteer?</p>
+    <p>Email us at: <a href="mailto:info@ecogreen.org">info@ecogreen.org</a></p>
+    <p>Go back to <a href="#about">About section</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Eco Green Movement. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
+
+
